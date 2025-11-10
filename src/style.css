@@ -2,7 +2,7 @@
 	--header-height: 5rem;
 	--footer-height: 5rem;
 	--content-height: calc(100vh - calc(var(--header-height) + var(--footer-height)));
-    --golden-color: #c29545;
+    --silver-color: #C0C0C0;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
 
 header {
     display: flex;
-    border-bottom: 2px solid var(--golden-color);
+    border-bottom: 2px solid var(--silver-color);
     justify-content: center;
     align-items: center;
     height: var(--header-height);
@@ -37,7 +37,7 @@ nav > button {
     border: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: var(--golden-color);
+    color: var(--silver-color);
     font-weight: bold;
 }
 
@@ -53,9 +53,9 @@ footer {
     justify-content: center;
     align-items: center;
     height: var(--footer-height);
-    border-top: 2px solid var(--golden-color);
+    border-top: 2px solid var(--silver-color);
     font-size: 1.5rem;
-    color: var(--golden-color);
+    color: var(--silver-color);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
