@@ -37,7 +37,6 @@ function menuRender() {
 
     content.appendChild(title);
     content.appendChild(sep);
-    content.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 
     content.appendChild(titleRecipeOne);
     content.appendChild(recipeTextOne);
@@ -52,6 +51,7 @@ function menuRender() {
     content.appendChild(titleRecipeThree);
     content.appendChild(recipeTextThree);
     content.appendChild(recipePriceThree);
+    content.appendChild(sepThree);
 }
 
 export { menuRender };

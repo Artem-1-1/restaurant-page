@@ -9,7 +9,6 @@ function aboutRender() {
     content.appendChild(title);
     content.appendChild(sep);
     content.appendChild(text);
-    content.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 }
 
 export { aboutRender };

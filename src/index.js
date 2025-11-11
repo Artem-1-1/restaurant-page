@@ -2,6 +2,7 @@ import "./style.css";
 import restaurantBackground from "./image/restaurant.jpg"
 import { aboutRender } from "./about.js";
 import { menuRender } from "./menu.js";
+import { homeRender } from "./home.js";
 
 const content = document.getElementById('content');
 
@@ -25,6 +26,7 @@ function renderFooter() {
 function home() {
 	content.innerHTML = "";
 	backgroundRender();
+	homeRender();
 	renderFooter();
 }
 
@@ -46,6 +48,6 @@ document.addEventListener('click', (e) => {
 	if (target === 'About') about();
 })
 
-document.addEventListener('DOMContentLoaded', home);
+document.addEventListener('DOMContentLoaded', home());
 
 export { content };
