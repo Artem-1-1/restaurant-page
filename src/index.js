@@ -1,5 +1,6 @@
 import "./style.css";
 import restaurantBackground from "./image/restaurant.jpg"
+import { aboutRender } from "./about.js";
 
 const content = document.getElementById('content');
 
@@ -16,11 +17,28 @@ function renderFooter() {
 	document.body.appendChild(footer);
 }
 
+function home() {
+	content.innerHTML = "";
+	backgroundRender();
+	renderFooter();
+}
+
+function menu() {
+	content.innerHTML = "";
+}
+
+function about() {
+	content.innerHTML = "";
+	aboutRender();
+}
+
 document.addEventListener('click', (e) => {
 	const target = e.target.innerText;
-	console.log(`${target} clicked!`)
+	
+	if (target === 'Home') home();
+	if (target ==='Menu') menu();
+	if (target === 'About') about();
 })
 
 
-renderFooter();
-backgroundRender();
+export { content };

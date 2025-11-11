@@ -3,6 +3,7 @@
 	--footer-height: 5rem;
 	--content-height: calc(100vh - calc(var(--header-height) + var(--footer-height)));
     --silver-color: #C0C0C0;
+    --golden-color: #c59d5f;
 }
 
 * {
@@ -44,8 +45,10 @@ nav > button {
 #content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: var(--content-height);
+    align-items: center;
+    gap : 2rem;
 }
 
 footer {
@@ -58,4 +61,22 @@ footer {
     color: var(--silver-color);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--golden-color);
+}
+
+p {
+    max-inline-size: 70ch;
+    font-size: 1.5rem;
+    color: var(--golden-color);
+}
+
+hr {
+    border: 2px solid var(--golden-color);
+    margin: 1.5rem auto;
+    width: 280px
 }
