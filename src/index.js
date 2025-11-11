@@ -1,6 +1,7 @@
 import "./style.css";
 import restaurantBackground from "./image/restaurant.jpg"
 import { aboutRender } from "./about.js";
+import { menuRender } from "./menu.js";
 
 const content = document.getElementById('content');
 
@@ -11,10 +12,14 @@ function backgroundRender() {
 
 function renderFooter() {
   const footer = document.createElement('footer');
-	const text = document.createElement('p');
-	text.textContent = 'Development by Artem-1-1';
-	footer.appendChild(text);
-	document.body.appendChild(footer);
+  footer.id = "footer";
+  if (document.getElementById('footer')) {
+	return;
+  }
+  const text = document.createElement('p');
+  text.textContent = 'Development by Artem-1-1';
+  footer.appendChild(text);
+  document.body.appendChild(footer);
 }
 
 function home() {
@@ -25,6 +30,7 @@ function home() {
 
 function menu() {
 	content.innerHTML = "";
+	menuRender();
 }
 
 function about() {
@@ -40,5 +46,6 @@ document.addEventListener('click', (e) => {
 	if (target === 'About') about();
 })
 
+document.addEventListener('DOMContentLoaded', home);
 
 export { content };
